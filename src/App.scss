@@ -1,0 +1,47 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+@import 'styles/base';
+@import 'styles/layout';
+@import 'styles/theme';
+
+// Reset
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+
+  .table-data {
+      padding: 2em;
+
+     .loading {
+         font-size: 2em;
+         margin-top: 5%;
+         text-align: center;
+     }
+
+     .table-sections {
+        margin: 2em 0;
+    
+        .table-list-container {
+          border-bottom: 1px solid #ccc;
+          border-top: 1px solid #ccc;
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          margin: 2em 0;
+          
+          .table-list {
+            list-style: none;
+          }
+        }
+    
+      }  
+
+  }
+  
+}
+
